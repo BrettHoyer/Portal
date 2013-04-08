@@ -1,0 +1,16 @@
+<div class="background-overlay">
+	<div class="initials-logo"></div>
+
+	<h3 class="twitter-header">@BrettHoyer</h3>	
+	<ul>
+		<% @tweets.each do |tweet| %>
+		<div class="tweet-container">
+			<i class="icon-twitter icon-2x"></i>
+			<span class="tweet-datetime"><%= tweet.readable_datetime %></span>
+		<li><%= tweet.message %></li>
+		</div>	
+
+		<% end %>
+	</ul>
+
+</div>

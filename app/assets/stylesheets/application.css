@@ -1,0 +1,103 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ *= require font-awesome
+ */
+ 
+ @import "font-awesome"; 
+
+
+ body{
+ 	margin: 0;
+ 	padding: 0;
+ 	background: url('background_portal_03.png');
+ 	background-repeat: repeat repeat;
+ }
+
+ .background-overlay{
+ 	background:url('background_overlay_01.png');
+ 	width: 100%;
+ 	height: 100%;		
+ }
+
+ h3.twitter-header{
+ 	margin: 0 auto;
+ 	padding: 2px;
+ 	display: table;
+ 	font-size: 20px;
+ 	color: white;
+ 	text-align: center;
+ 	border-left: 5px solid rgba(177, 218, 231,.7);;
+ 	border-right: 5px solid rgba(177, 218, 231,.7);;
+ 	border-bottom: 5px solid rgba(177, 218, 231,.7);;
+ }
+
+.tweet-container{
+	background: rgba(0,0,0,.5);
+	border-radius: 10px;
+	height:65px;
+	width: 80%;
+	margin: 0 auto 10px auto;
+}
+
+.tweet-container ul{
+	position: relative;
+	display: block;
+	clear:both;
+	float: right;
+
+}
+
+.tweet-container li{
+	color: white;
+	text-align: left;
+	list-style: none;
+	padding-top: 28px;
+
+}
+
+.tweet-container i{
+	display: block;
+	vertical-align: middle;
+	color: lightblue;
+	float: left;
+	margin: 10px;
+}
+
+.tweet-container .tweet-datetime{
+	background: grey;
+	position: relative;
+	float: right;
+	top: -10px;
+	right: -10px;
+	color: white;
+	margin: 5px 5px 0 0;
+	padding: 3px;
+	border-left: 1px dashed white;
+	border-bottom: 1px dashed white;
+	overflow: visible;
+}
+
+.initials-logo{
+	background: url('jbh_03.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width: 200px;
+	height: 150px;
+	border-radius: 20px;
+	margin: 0 auto;
+}
+
+ul{
+	padding-left: 0;
+}
+
