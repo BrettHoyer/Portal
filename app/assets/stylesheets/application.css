@@ -44,9 +44,7 @@
 .tweet-container{
 	background: rgba(0,0,0,.5);
 	border-radius: 10px;
-	height:65px;
-	width: 80%;
-	margin: 0 auto 10px auto;
+	margin: 0 50px 10px 50px;
 }
 
 .tweet-container ul{
@@ -61,7 +59,9 @@
 	color: white;
 	text-align: left;
 	list-style: none;
-	padding-top: 28px;
+	padding: 10px;
+	clear: right;
+	font-size: 14px;
 
 }
 
@@ -101,3 +101,11 @@ ul{
 	padding-left: 0;
 }
 
+@media only screen and (max-width: 450px){
+
+.tweet-container li{
+	font-size: 14px;
+}
+
+
+}

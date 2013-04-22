@@ -7,8 +7,8 @@ class Tweet < ActiveRecord::Base
   	def self.update_tweets
 		client = Grackle::Client.new(:auth=>{
 		  :type=>:oauth,
-		  :consumer_key=>'6Lv9Y8NDoUvx0FTVqhKIXg', :consumer_secret=>'smkv6ymLZ6Khr5d6TPl77EwAZpaKL2QQ71XeEXxN4',
-		  :token=>'154367866-JMME4pk1RRZCDH1KSqX9K0cNVlG79GjXdRboELRO', :token_secret=>'yaIyPAgI53cHDTglx2gVNLy7pPh6O72XM3C3kGEOQ'
+		  :consumer_key=> ENV["CONSUMER_KEY"], :consumer_secret=> ENV["CONSUMER_SECRET"],
+		  :token=> ENV["TOKEN"], :token_secret=> ENV["TOKEN_SECRET"]
 		})
 
 

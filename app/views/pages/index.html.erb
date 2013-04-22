@@ -4,7 +4,7 @@
 	<h3 class="twitter-header">@BrettHoyer</h3>	
 	<ul>
 		<% @tweets.each do |tweet| %>
-		<div class="tweet-container">
+		<div class="tweet-container row-fluid">
 			<i class="icon-twitter icon-2x"></i>
 			<span class="tweet-datetime"><%= tweet.readable_datetime %></span>
 		<li><%= tweet.message %></li>
@@ -12,5 +12,11 @@
 
 		<% end %>
 	</ul>
+
+	<% @rants.each do |rant| %>
+	<h4><%= rant.title %></h4>
+	<%= image_tag rant.image_url(:thumb).to_s %>
+	<p><%= rant.message %></p>
+	<% end %>
 
 </div>
